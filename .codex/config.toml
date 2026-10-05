@@ -1,0 +1,12 @@
+# Project MCPs. Requires a trusted project and a fresh Codex session.
+[mcp_servers.astro_docs]
+url = "https://mcp.docs.astro.build/mcp"
+
+[mcp_servers.cloudflare_docs]
+url = "https://docs.mcp.cloudflare.com/mcp"
+
+# Optional: enable and run `codex mcp login cloudflare_observability`
+# when access to deployed Worker logs and analytics is needed.
+[mcp_servers.cloudflare_observability]
+url = "https://observability.mcp.cloudflare.com/mcp"
+enabled = false

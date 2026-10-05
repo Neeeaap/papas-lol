@@ -13,7 +13,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
+			<h1>
+				<img
+					class="mascot"
+					src="https://www.angrybirds.com/wp-content/uploads/2022/05/ABCOM_202203_CharacterDimensio_Bomb_Classic-1.png"
+					alt="Bomb from Angry Birds"
+					width="80"
+					height="80"
+				/>
+				Hello, Bomb!
+			</h1>
 			<p>
 				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
 				template serves as a lightweight, minimally-styled starting point for anyone looking to build
@@ -48,3 +57,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.mascot {
+		width: 1.3em;
+		height: 1.3em;
+		object-fit: contain;
+		vertical-align: middle;
+		border-radius: 0;
+	}
+</style>
