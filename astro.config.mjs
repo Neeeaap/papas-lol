@@ -8,6 +8,11 @@ import cloudflare from "@astrojs/cloudflare";
 // https://astro.build/config
 export default defineConfig({
 	site: "https://example.com",
+	markdown: {
+		shikiConfig: {
+			theme: "github-dark",
+		},
+	},
 	integrations: [mdx(), sitemap()],
 	adapter: cloudflare({
 		platformProxy: {
